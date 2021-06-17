@@ -120,8 +120,12 @@
             jQuery.ajaxSetup({ async: false });
             var resultObj = executeCommandAtGivenBaseUrl(findReq,
                 "http://api.login2explore.com:5577", "/api/irl");
-            alert("SUCCESSFUL: "+JSON.parse(JSON.stringify(resultObj))
-                    + (JSON.stringify(resultObj).toString()));
+//                let text = "";
+//                var result = JSON.stringify(resultObj);
+//                for (let x in result) {
+//                  text += x +": "+result[x]+ "\n";
+//                }
+            alert(JSON.stringify(resultObj) +text);
             jQuery.ajaxSetup({ async: true });
             resetForm();
         }
